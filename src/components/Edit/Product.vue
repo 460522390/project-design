@@ -25,11 +25,7 @@
             <el-form label-width="80px">
                 <template v-for="(key, val, index) in options">
                     <el-form-item :label="key" :key="index" v-if="loadingOption">
-                        <el-switch 
-                            v-model="list['options'][val]" 
-                            :name="val" 
-                            @change="optionsChange(val, $event)"
-                        ></el-switch>
+
                     </el-form-item>
                 </template>
             </el-form>
@@ -92,9 +88,9 @@ export default {
             selectProduct: '',
 
             options: {
-                originalPrice: '划线价',
-                goodRatio: '好评率',
-                volumeStr: '销量数'
+                originalPrice: '',
+                goodRatio: '',
+                volumeStr: ''
             },
             loadingOption: false
         }
@@ -106,10 +102,10 @@ export default {
             this.$emit('changeTab', 2)
         }
 
-        // 默认开启所有选项
+        // 默认关闭所有选项
         for (let key in this.options) {
             if (this.data.options[key] == undefined) {
-                this.$set(this.list.options, key, true)
+                this.$set(this.list.options, key, false)
             }
         }
         this.loadingOption = true
@@ -145,32 +141,32 @@ export default {
 // 模拟产品列表
 var productList = [{
     "productId": 3601,
-    "productName": "驼大大新疆正宗骆驼奶粉初乳骆驼乳粉蓝罐礼盒装120g*4罐",
-    "productImg": "https://img.quanminyanxuan.com/excel/f6860885547648d9996474bbf21fdca9.jpg",
+    "productName": "柱状图",
+    "productImg": "http://81.70.132.82:16384/static/media/img/6.png",
     "productPrice": 299,
     "originalPrice": 598,
     "volumeStr": "741",
     "goodRatio": 98
 }, {
     "productId": 3268,
-    "productName": "百合28件套新骨质瓷餐具",
-    "productImg": "https://img.quanminyanxuan.com/excel/185e7365f65543f2b4ebc67036d6a78f.jpg",
+    "productName": "饼状图",
+    "productImg": "http://81.70.132.82:16384/static/media/img/3.jpg",
     "productPrice": 370,
     "originalPrice": 1388,
     "volumeStr": "400",
     "goodRatio": 99
 }, {
     "productId": 3343,
-    "productName": "和商臻品槐花蜜250克/瓶",
-    "productImg": "https://img.quanminyanxuan.com/excel/4626c8c628d04935b0262d04991416b2.jpg",
+    "productName": "树状图",
+    "productImg": "http://81.70.132.82:16384/static/media/img/4.jpg",
     "productPrice": 34.5,
     "originalPrice": 72,
     "volumeStr": "258",
     "goodRatio": 98
 }, {
     "productId": 3330,
-    "productName": "鲍参翅肚浓羹350g袋装",
-    "productImg": "https://img.quanminyanxuan.com/excel/58a0c968dc7d42c3ac21e09d1862aa6f.jpg",
+    "productName": "折线图",
+    "productImg": "http://81.70.132.82:16384/static/media/img/5.png",
     "productPrice": 75,
     "originalPrice": 128,
     "volumeStr": "258",

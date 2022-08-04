@@ -32,6 +32,7 @@
                     v-model="view"
                     draggable=".item"
                 >
+
                     <template v-for="(item, index) in view">
                         <div
                             v-if="index > 0"

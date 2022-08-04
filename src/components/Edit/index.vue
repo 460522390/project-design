@@ -53,7 +53,7 @@ export default {
                     com: 'Images'
                 },
                 'product': {
-                    tit: '商品',
+                    tit: '组件',
                     com: 'Product'
                 },
             },

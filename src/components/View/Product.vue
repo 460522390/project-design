@@ -10,30 +10,36 @@
                     <img :src="item.productImg">
                 </div>
                 <div class="info">
-                    <p class="name">{{ item.productName }}</p>
+                  <!--
+                  <p class="name">{{ item.productName }}</p>
+                  -->
+                    <!--
                     <p class="num">
                         {{ options.volumeStr ? item.volumeStr + ' 已购买' : '' }} {{ line }} {{ options.goodRatio ? item.goodRatio + '99%' : '' }}
                     </p>
+                    -->
+                    <!--
                     <p class="price">
                         <span>￥{{ item.productPrice }}</span>
                         <span v-if="options.originalPrice">￥{{ item.originalPrice }}</span>
                     </p>
+                    -->
                 </div>
             </div>
         </template>
         <template v-else>
             <div class="product-item product-default" v-for="index in 3" :key="index">
                 <div class="image">
-                    <img src="https://img.quanminyanxuan.com/other/21188f7a1e9340759c113aa569f96699.jpg?x-oss-process=image/resize,h_600,m_lfit" alt="">
+                    <img src="http://81.70.132.82:16384/static/media/img/1.png" alt="">
                 </div>
                 <div class="info">
-                    <p class="name">这是商品名称</p>
+                    <p class="name"></p>
                     <p class="num">
-                        12124 已购买 | 99%
+
                     </p>
                     <p class="price">
-                        <span>￥9.99</span>
-                        <span>￥9.99</span>
+                        <span></span>
+                        <span></span>
                     </p>
                 </div>
             </div>
