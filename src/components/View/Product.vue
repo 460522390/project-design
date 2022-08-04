@@ -30,7 +30,7 @@
         <template v-else>
             <div class="product-item product-default" v-for="index in 3" :key="index">
                 <div class="image">
-                    <img src="http://81.70.132.82:16384/static/media/img/1.png" alt="">
+                    <img src="../image/1号图片.png" alt="">
                 </div>
                 <div class="info">
                     <p class="name"></p>
