@@ -14,10 +14,38 @@
                     class="item"
                     v-for="(item, index) in list.data"
                     :key="index"
+                    v-if="item.productId===3601"
                 >
-                    <img :src="item.productImg">
+                    <img src="../image/5号图片.jpeg">
                     <i class="el-icon-error" @click="deleteItem(index)"></i>
                 </li>
+              <li
+                  class="item"
+                  v-for="(item, index) in list.data"
+                  :key="index"
+                  v-if="item.productId===3268"
+              >
+                <img src="../image/2号图片.jpeg">
+                <i class="el-icon-error" @click="deleteItem(index)"></i>
+              </li>
+              <li
+                  class="item"
+                  v-for="(item, index) in list.data"
+                  :key="index"
+                  v-if="item.productId===3343"
+              >
+                <img src="../image/3号图片.jpeg">
+                <i class="el-icon-error" @click="deleteItem(index)"></i>
+              </li>
+              <li
+                  class="item"
+                  v-for="(item, index) in list.data"
+                  :key="index"
+                  v-if="item.productId===3330"
+              >
+                <img src="../image/4号图片.jpeg">
+                <i class="el-icon-error" @click="deleteItem(index)"></i>
+              </li>
             </vuedraggable>
         </template>
 
