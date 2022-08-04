@@ -6,9 +6,18 @@
                 v-for="(item, index) in data.data" 
                 :key="index"
             >
-                <div class="image">
-                    <img :src="item.productImg">
+                <div class="image" v-if="item.productId === 3268">
+                    <img src="../image/2号图片.jpeg">
                 </div>
+              <div class="image" v-if="item.productId === 3343">
+                <img src="../image/3号图片.jpeg">
+              </div>
+              <div class="image" v-if="item.productId === 3330">
+                <img src="../image/4号图片.jpeg">
+              </div>
+              <div class="image" v-if="item.productId === 3601">
+                <img src="../image/5号图片.jpeg">
+              </div>
                 <div class="info">
                   <!--
                   <p class="name">{{ item.productName }}</p>
