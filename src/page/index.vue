@@ -1,13 +1,13 @@
 <template>
     <section class="decoration-edit">
         <section class="l">
-            <ul 
+            <ul
                 @dragstart="dragStart"
                 @dragend="dragEnd"
             >
-                <li 
+                <li
                     v-for="(val, key, index) in typeList"
-                    draggable 
+                    draggable
                     :data-type="key"
                     :key="index + 1"
                 >
@@ -19,10 +19,10 @@
         <section class="c">
             <!-- header 不可拖拽 --> 
             <div class="top-nav" @click="selectType(0)">
-                <img src="./../assets/images/topNavBlack.png">
+                <img src="./../assets/images/topNavBlack1.png">
                 <span class="tit">{{ info.title }}</span>
             </div>
-            <div 
+            <div
                 class="view-content"
                 @drop="drog"
                 @dragover="dragOver"
@@ -46,8 +46,8 @@
                                 <div class="wait"> {{ item.type }} </div>
                             </template>
                             <template v-else>
-                                <component 
-                                    :is="typeList[item.type]['com']" 
+                                <component
+                                    :is="typeList[item.type]['com']"
                                     :data="item"
                                     :className="className[item.tabType]"
                                 ></component>

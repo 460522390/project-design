@@ -142,7 +142,7 @@ export default {
 var productList = [{
     "productId": 3601,
     "productName": "柱状图",
-    "productImg": "http://81.70.132.82:16384/static/media/img/6.png",
+    "productImg": "../image/2号图片.jpeg",
     "productPrice": 299,
     "originalPrice": 598,
     "volumeStr": "741",
@@ -166,7 +166,7 @@ var productList = [{
 }, {
     "productId": 3330,
     "productName": "折线图",
-    "productImg": "http://81.70.132.82:16384/static/media/img/5.png",
+    "productImg": "https://wx1.sinaimg.cn/large/008h07t6ly1h4uupmabuej310y0mat9v.jpg",
     "productPrice": 75,
     "originalPrice": 128,
     "volumeStr": "258",
